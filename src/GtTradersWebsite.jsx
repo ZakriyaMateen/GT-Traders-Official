@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Phone, Mail, MapPin, Star, CheckCircle, ArrowRight, Menu, X, ChevronLeft, ChevronRight, Heart, ShoppingCart } from 'lucide-react';
+import { Phone, Mail, MapPin, Star, CheckCircle, ArrowRight, Menu, X, ChevronLeft, ChevronRight, Heart, ShoppingCart, Facebook } from 'lucide-react';
 import { products } from './products';
 import { Footer } from './Footer';
 import { Header } from './Header';
@@ -309,6 +309,17 @@ export default function GTTradersWebsite() {
                                                 <h4 className="font-semibold text-gray-800 mb-1 text-sm sm:text-base">Email</h4>
                                                 <a href="mailto:official.gt.traders@gmail.com" className="text-blue-600 hover:text-blue-700 transition-colors font-medium text-sm sm:text-base break-all">
                                                     official.gt.traders@gmail.com
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div className="flex items-start space-x-3 sm:space-x-4 group">
+                                            <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-purple-600 to-blue-600 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:rotate-6 transition-transform duration-300">
+                                                <Facebook className="text-white" size={18} />
+                                            </div>
+                                            <div>
+                                                <h4 className="font-semibold text-gray-800 mb-1 text-sm sm:text-base">Facebook</h4>
+                                                <a href="https://www.facebook.com/profile.php?id=61577387990747" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-700 transition-colors font-medium text-sm sm:text-base break-all">
+                                                    GT Traders Facebook
                                                 </a>
                                             </div>
                                         </div>

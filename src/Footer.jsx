@@ -1,5 +1,5 @@
 import React from 'react'
-import { Phone, Mail, MapPin } from 'lucide-react'
+import { Phone, Mail, MapPin, Facebook } from 'lucide-react'
 
 export const Footer = ({ scrollToSection }) => {
     return (
@@ -45,6 +45,12 @@ export const Footer = ({ scrollToSection }) => {
                                 <Mail size={16} className="text-purple-400" />
                                 <a href="mailto:official.gt.traders@gmail.com" className="text-gray-400 hover:text-white transition-colors">
                                     official.gt.traders@gmail.com
+                                </a>
+                            </div>
+                            <div className="flex items-center space-x-3">
+                                <Facebook size={16} className="text-purple-400" />
+                                <a href="https://www.facebook.com/profile.php?id=61577387990747" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
+                                    GT Traders Facebook
                                 </a>
                             </div>
                             <div className="flex items-center space-x-3">

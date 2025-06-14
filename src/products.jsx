@@ -7,42 +7,42 @@ export const products = [
                 name: "Coconut Formula",
                 description: "Hair Loss Control & Shining - Shampoo + Conditioner",
                 image: "https://res.cloudinary.com/dk6uqxx74/image/upload/v1749545788/Coconut_Formula_qaw1ve.jpg",
-                features: ["No Sulfates", "No Parabens", "No Phthalates", "No Mineral Oil", "No Gluten", "No Dies"],
+                features: ["Different Sizes Available", "No Sulfates", "No Parabens", "No Phthalates", "No Mineral Oil", "No Gluten", "No Dies"],
                 price: "Contact for price"
             },
             {
                 name: "Garlic Oil",
                 description: "Nutritive Anti-Hair Loss - Shampoo + Conditioner",
                 image: "https://res.cloudinary.com/dk6uqxx74/image/upload/v1749545793/Garlic_Oil_Shampoo_xet1yk.jpg",
-                features: ["No Sulfates", "No Parabens", "No Phthalates", "No Mineral Oil", "No Gluten", "No Dies"],
+                features: ["Different Sizes Available", "No Sulfates", "No Parabens", "No Phthalates", "No Mineral Oil", "No Gluten", "No Dies"],
                 price: "Contact for price"
             },
             {
                 name: "Argan Oil",
                 description: "Hair Loss Control & Repair - Shampoo + Conditioner",
                 image: "https://res.cloudinary.com/dk6uqxx74/image/upload/v1749545787/Argan_Oil_Shampoo_mtwuk6.jpg",
-                features: ["No Sulfates", "No Parabens", "No Phthalates", "No Mineral Oil", "No Gluten", "No Dies"],
+                features: ["Different Sizes Available", "No Sulfates", "No Parabens", "No Phthalates", "No Mineral Oil", "No Gluten", "No Dies"],
                 price: "Contact for price"
             },
             {
                 name: "Tea Tree Oil",
                 description: "Hair Loss Control & Hair Scalp - Shampoo + Conditioner",
                 image: "https://res.cloudinary.com/dk6uqxx74/image/upload/v1749545798/Tea_Tree_Oil_Shampoo_n9wynh.jpg",
-                features: ["No Sulfates", "No Parabens", "No Phthalates", "No Mineral Oil", "No Gluten", "No Dies"],
+                features: ["Different Sizes Available", "No Sulfates", "No Parabens", "No Phthalates", "No Mineral Oil", "No Gluten", "No Dies"],
                 price: "Contact for price"
             },
             {
                 name: "Real",
                 description: "",
                 image: "https://res.cloudinary.com/dk6uqxx74/image/upload/v1749938391/WhatsApp_Image_2025-06-15_at_12.50.25_AM_byarim.jpg",
-                features: ["No Sulfates", "No Parabens", "No Phthalates", "No Mineral Oil", "No Gluten", "No Dies"],
+                features: ["Different Sizes Available", "No Sulfates", "No Parabens", "No Phthalates", "No Mineral Oil", "No Gluten", "No Dies"],
                 price: "Contact for price"
             },
             {
                 name: "Real",
                 description: "",
                 image: "https://res.cloudinary.com/dk6uqxx74/image/upload/v1749938265/WhatsApp_Image_2025-06-15_at_12.50.26_AM_p61rcn.jpg",
-                features: ["No Sulfates", "No Parabens", "No Phthalates", "No Mineral Oil", "No Gluten", "No Dies"],
+                features: ["Different Sizes Available", "No Sulfates", "No Parabens", "No Phthalates", "No Mineral Oil", "No Gluten", "No Dies"],
                 price: "Contact for price"
             },
         ]
