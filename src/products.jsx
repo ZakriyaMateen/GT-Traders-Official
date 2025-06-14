@@ -30,7 +30,21 @@ export const products = [
                 image: "https://res.cloudinary.com/dk6uqxx74/image/upload/v1749545798/Tea_Tree_Oil_Shampoo_n9wynh.jpg",
                 features: ["No Sulfates", "No Parabens", "No Phthalates", "No Mineral Oil", "No Gluten", "No Dies"],
                 price: "Contact for price"
-            }
+            },
+            {
+                name: "Real",
+                description: "",
+                image: "https://res.cloudinary.com/dk6uqxx74/image/upload/v1749938391/WhatsApp_Image_2025-06-15_at_12.50.25_AM_byarim.jpg",
+                features: ["No Sulfates", "No Parabens", "No Phthalates", "No Mineral Oil", "No Gluten", "No Dies"],
+                price: "Contact for price"
+            },
+            {
+                name: "Real",
+                description: "",
+                image: "https://res.cloudinary.com/dk6uqxx74/image/upload/v1749938265/WhatsApp_Image_2025-06-15_at_12.50.26_AM_p61rcn.jpg",
+                features: ["No Sulfates", "No Parabens", "No Phthalates", "No Mineral Oil", "No Gluten", "No Dies"],
+                price: "Contact for price"
+            },
         ]
     },
     {

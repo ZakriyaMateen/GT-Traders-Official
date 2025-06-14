@@ -8,6 +8,7 @@ export default function GTTradersWebsite() {
     const [scrolled, setScrolled] = useState(false);
     const [activeCarousels, setActiveCarousels] = useState({});
     const [favorites, setFavorites] = useState(new Set());
+    const [expandedImages, setExpandedImages] = useState({});
 
     useEffect(() => {
         const handleScroll = () => {
@@ -53,6 +54,14 @@ export default function GTTradersWebsite() {
             }
             return newFavorites;
         });
+    };
+
+    const toggleImageExpand = (categoryIndex, itemIndex) => {
+        const key = `${categoryIndex}-${itemIndex}`;
+        setExpandedImages(prev => ({
+            ...prev,
+            [key]: !prev[key]
+        }));
     };
 
     return (
@@ -176,23 +185,32 @@ export default function GTTradersWebsite() {
                                             >
                                                 {productCategory.items.map((item, itemIndex) => (
                                                     <div key={itemIndex} className="w-full flex-shrink-0 p-3 sm:p-4">
-                                                        <div className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
-                                                            <div className="relative group">
+                                                        <div className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md active:shadow-lg transition-all duration-300 touch-manipulation">
+                                                            <div
+                                                                className="relative group active:scale-[0.98] sm:group-hover:scale-[0.98] transition-transform duration-200"
+                                                                onClick={() => toggleImageExpand(categoryIndex, itemIndex)}
+                                                            >
                                                                 <div className="aspect-[4/3] w-full bg-gray-100 overflow-hidden">
                                                                     <img
                                                                         src={item.image}
                                                                         alt={item.name}
-                                                                        className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                                                                        className={`w-full h-full object-center transition-all duration-500 ${expandedImages[`${categoryIndex}-${itemIndex}`]
+                                                                            ? 'object-contain scale-110'
+                                                                            : 'object-cover sm:group-hover:object-contain sm:group-hover:scale-105'
+                                                                            }`}
                                                                         loading="lazy"
                                                                     />
                                                                 </div>
-                                                                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0 to-black/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                                                                <div className="absolute bottom-3 left-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-3 py-1 rounded-full text-sm font-medium shadow-lg">
+                                                                <div className={`absolute inset-0 bg-gradient-to-t from-black/60 via-black/0 to-black/0 transition-opacity duration-300 ${expandedImages[`${categoryIndex}-${itemIndex}`]
+                                                                    ? 'opacity-100'
+                                                                    : 'opacity-0 sm:group-hover:opacity-100'
+                                                                    }`}></div>
+                                                                <div className="absolute bottom-3 left-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-3 py-1 rounded-full text-sm font-medium shadow-lg active:scale-95 sm:group-hover:scale-95 transition-transform duration-200">
                                                                     {item.price}
                                                                 </div>
                                                             </div>
-                                                            <div className="p-4 sm:p-5">
-                                                                <h4 className="text-lg font-bold text-gray-800 mb-2 group-hover:text-blue-600 transition-colors">
+                                                            <div className="p-4 sm:p-5 active:bg-gray-50/50 sm:group-hover:bg-gray-50/50 transition-colors duration-200">
+                                                                <h4 className="text-lg font-bold text-gray-800 mb-2 active:text-blue-600 sm:group-hover:text-blue-600 transition-colors">
                                                                     {item.name}
                                                                 </h4>
                                                                 <p className="text-gray-600 text-sm sm:text-base leading-relaxed mb-4">
@@ -201,8 +219,8 @@ export default function GTTradersWebsite() {
                                                                 {item.features.length > 0 && (
                                                                     <div className="space-y-2">
                                                                         {item.features.map((feature, idx) => (
-                                                                            <div key={idx} className="flex items-start text-sm text-gray-600">
-                                                                                <CheckCircle size={16} className="text-green-500 mr-2 flex-shrink-0 mt-0.5" />
+                                                                            <div key={idx} className="flex items-start text-sm text-gray-600 active:translate-x-1 sm:group-hover:translate-x-1 transition-transform duration-200">
+                                                                                <CheckCircle size={16} className="text-green-500 mr-2 flex-shrink-0 mt-0.5 active:scale-110 sm:group-hover:scale-110 transition-transform duration-200" />
                                                                                 <span>{feature}</span>
                                                                             </div>
                                                                         ))}
